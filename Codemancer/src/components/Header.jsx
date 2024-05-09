@@ -1,11 +1,9 @@
 import logo from './logo_receptor.png'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 const Header = () => {
     return (
-        <>
-
-
-            <nav className="fixed w-full z-20 top-0 start-0">
+        <div>
+            <nav className="sticky top-0 z-50 bg-white w-full  start-0">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src={logo} className="" alt=" receptor Logo" />
@@ -22,17 +20,17 @@ const Header = () => {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                             <li>
-                                <a href="#" className="py-2 px-3 font-bold text-black text-2xl  text-[#1D4ED8]" aria-current="page">Home</a>
+                                <a href="/" className="py-2 px-3 font-bold text-black text-2xl  text-[#1D4ED8]" aria-current="page">Home</a>
                             </li>
                             <li>
-                                <a href="#" className=" py-2 px-3  font-bold text-black text-[#1D4ED8]  text-2xl">About</a>
+                                <a href="/about" className=" py-2 px-3  font-bold text-black text-[#1D4ED8]  text-2xl">About</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-        </>
+        </div>
     )
 }
 
