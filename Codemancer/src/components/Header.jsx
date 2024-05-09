@@ -20,10 +20,10 @@ const Header = () => {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                             <li>
-                                <a href="/" className="py-2 px-3 font-bold text-black text-2xl  text-[#1D4ED8]" aria-current="page">Home</a>
+                                <a href="/" className="py-2 px-3 font-bold text-black text-2xl  text-blue-700" >Home</a>
                             </li>
                             <li>
-                                <a href="/about" className=" py-2 px-3  font-bold text-black text-[#1D4ED8]  text-2xl">About</a>
+                                <a href="/about" className=" py-2 px-3  font-bold text-black text-blue-700 text-2xl">About</a>
                             </li>
                         </ul>
                     </div>
