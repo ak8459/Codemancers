@@ -1,7 +1,9 @@
 
 const RecipeCard = ({ recipe }) => {
-    console.log(recipe);
-    const { image, label } = recipe?.recipe
+    // console.log(recipe._links.self.href);
+    // console.log(recipe.recipe);
+    const { image, label} = recipe?.recipe
+   
     return (
         <div className="max-w-sm rounded rounded-3xl bg-blue-50  overflow-hidden shadow-lg">
             <img className="w-full h-80" src={image} alt="Sunset in the mountains" />
