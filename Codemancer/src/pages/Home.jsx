@@ -15,16 +15,13 @@ const Home = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            // Here you can perform any action you want to debounce,
-            // like sending a request, updating state, etc.
+          
             fetchData(query, dishType, diet)
         }, 500); // Adjust the delay time as needed (e.g., 500 milliseconds)
 
         // Cleanup function to clear the timeout when the component re-renders or unmounts
         return () => clearTimeout(timer);
     }, [query, dishType, diet]);
-
-
 
     if (loading) {
         return <Loading />

@@ -14,7 +14,6 @@ export function RecipeProvider({ children }) {
     }
 
     const fetchData = (query = "", dishType, diet) => {
-
         setLoading(true)
         getRecipes(query, dishType, diet).then((data) => {
             setRecipes(data?.hits);

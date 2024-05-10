@@ -3,9 +3,9 @@ import logo from './logo_receptor.png'
 const Header = () => {
     return (
         <div>
-            <nav className="sticky top-0 z-50 bg-white w-full  start-0">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <nav className="sticky top-0 z-50 bg-white w-full ">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+                    <a href="#" className="flex items-center rtl:space-x-reverse">
                         <img src={logo} className="" alt=" receptor Logo" />
                     </a>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -17,13 +17,13 @@ const Header = () => {
                             </svg>
                         </button>
                     </div>
-                    <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                        <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <div className="justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                        <ul className="flex flex-col   md:p-0 mr-28  font-medium   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                             <li>
-                                <a href="/" className="py-2 px-3 font-bold text-black text-2xl  text-blue-700" >Home</a>
+                                <a href="/" className=" px-2 font-bold text-black text-2xl  text-blue-700" >Home</a>
                             </li>
                             <li>
-                                <a href="/about" className=" py-2 px-3  font-bold text-black text-blue-700 text-2xl">About</a>
+                                <a href="/about" className="px-2  font-bold text-black text-blue-700 text-2xl">About</a>
                             </li>
                         </ul>
                     </div>
