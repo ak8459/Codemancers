@@ -1,7 +1,12 @@
 import { useState } from "react"
+import Filter from "./Filter"
 
 function SearchBox({ placeholderVal, Value, handleChange }) {
   const [showFilter, setShowFilter] = useState(false)
+
+  const toggleFilter = () => {
+    setShowFilter(false)
+  }
 
   return (
     <>
@@ -19,11 +24,12 @@ function SearchBox({ placeholderVal, Value, handleChange }) {
           dark:bg-blue-50 dark:placeholder-gray-400 dark:placeholder-font-bold 
            dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={placeholderVal} />
         </div>
-        <button onClick={() => setShowFilter(!showFilter)} className="rounded-2xl items-center py-2.5 px-3 ms-5 text-sm font-medium text-[#1D4ED8]   hover:bg-blue-800  focus:outline-none  dark:bg-blue-100 dark:hover:bg-blue-100 dark:focus:ring-blue-800 ">
+
+        <button onClick={() => setShowFilter(!showFilter)} className="rounded-2xl items-center py-2.5 px-3 ms-5 text-sm font-medium text-blue-700    hover:bg-blue-800  focus:outline-none  dark:bg-blue-100 dark:hover:bg-blue-100 dark:focus:ring-blue-800 ">
           {showFilter ? "Hide Filter" : "Show Filter"}
         </button>
       </div>
-
+      {showFilter && <Filter toggleFilter={toggleFilter} />}
     </>
   )
 }
