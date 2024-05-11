@@ -9,7 +9,7 @@ const AllRoutes = () => {
             <Routes>
                 <Route path="/" exact element={<Home />} />
                 <Route path="/about" exact element={<About />} />
-                <Route path='/single-recipe/:recipeId' element={<SingleRecipe />} />
+                <Route path='/recipe/:recipeId' element={<SingleRecipe />} />
             </Routes>
         </>
     )

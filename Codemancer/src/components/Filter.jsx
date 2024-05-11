@@ -1,80 +1,8 @@
 import React from 'react'
 
-const Category = [{
-    id: 1,
-    name: "Bread",
-    value: "bread",
-    checked: false
-}, {
-    id: 2,
-    name: "Salad",
-    value: "salad",
-    checked: false
-}, {
-    id: 3,
-    name: "Dessert",
-    value: "dessert",
-    checked: false
-}, {
-    id: 4,
-    name: "Drink",
-    value: "drink",
-    checked: false
-}
-    , {
-    id: 5,
-    name: "Main",
-    value: "main course",
-    checked: false
-}, {
-    id: 6,
-    name: "Snack",
-    value: "snack",
-    checked: false
-}, {
-    id: 7,
-    name: "Soup",
-    value: "soup",
-    checked: false
-}, {
-    id: 8,
-    name: "Pastry",
-    value: "pastry",
-    checked: false
-}
-]
-
-const Diet = [
-    {
-        id: 3,
-        name: "Keto",
-        value: "keto",
-        checked: false
-    },
-
-    {
-        id: 2,
-        name: "Vegetarian",
-        value: "vegetarian",
-        checked: false
-    },
-    {
-        id: 1,
-        name: "Vegan",
-        value: "vegan",
-        checked: false
-    }
-    , {
-        id: 4,
-        name: "Other",
-        value: "other",
-        checked: false
-    }
-]
+import { Category, Diet } from '../context/RecipeContext'
 
 const Filter = ({ toggleFilter }) => {
-
-
 
     return (
         <div className='w-2/4 mx-auto bg-blue-50 px-10 py-7 mt-10 rounded rounded-xl'>

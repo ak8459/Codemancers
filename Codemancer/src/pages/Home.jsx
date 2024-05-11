@@ -9,21 +9,18 @@ const Home = () => {
     const [dishType, setDishType] = useState(['bread']);
     const [diet, setDiet] = useState(['kosher']);
 
-    const { data, fetchData } = useContext(RecipeContext)
-
-    const { recipes, loading } = data
+    const { isLoading, fetchData, recipes } = useContext(RecipeContext)
 
     useEffect(() => {
         const timer = setTimeout(() => {
-          
             fetchData(query, dishType, diet)
-        }, 500); // Adjust the delay time as needed (e.g., 500 milliseconds)
-
-        // Cleanup function to clear the timeout when the component re-renders or unmounts
+        }, 500);
         return () => clearTimeout(timer);
     }, [query, dishType, diet]);
 
-    if (loading) {
+
+
+    if (isLoading) {
         return <Loading />
     }
 
@@ -38,7 +35,8 @@ const Home = () => {
                 Value={query}
                 handleChange={handleChange}
             />
-            <Recipes recipes={recipes} />
+            <Recipes recipes={recipes.hits} />
+
 
         </>
     )

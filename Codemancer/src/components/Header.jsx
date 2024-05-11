@@ -5,7 +5,7 @@ const Header = () => {
         <div>
             <nav className="sticky top-0 z-50 bg-white w-full ">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
-                    <a href="#" className="flex items-center rtl:space-x-reverse">
+                    <a href="/" className="flex items-center rtl:space-x-reverse">
                         <img src={logo} className="" alt=" receptor Logo" />
                     </a>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
