@@ -139,7 +139,7 @@ export function RecipeProvider({ children }) {
         return () => clearTimeout(timer);
     }, [query, dishType, diet]);
 
-    console.log(dishType);
+    // console.log(dishType);
 
     return (
         <RecipeContext.Provider value={{
