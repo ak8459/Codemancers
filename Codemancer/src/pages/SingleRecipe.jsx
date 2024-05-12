@@ -18,11 +18,11 @@ const SingleRecipe = () => {
   }
   // console.log(recipeInfo);
   return (
-    <div className='w-3/5 grid grid-cols-2 gap-5 md:grid-cols-2 mt-16 mx-auto'>
+    <div className='w-3/5 grid grid-cols-2 gap-5 md:grid-cols-2 mt-16 mx-auto '>
 
       <div ><img className="w-full border h-auto sm:object-fit  rounded-3xl" src={recipeInfo.image} alt={recipeInfo?.label} /></div>
 
-      <div className="mt-5">
+      <div className="mt-5 w-5/6">
         <h2 className="text-3xl my-4 font-semibold sm:text-3xl  text-blue-700">{recipeInfo?.label}</h2>
         <h2 className="text-md my-4 font-semibold  sm:text-lg text-blue-600">{recipeInfo?.label}</h2>
 
@@ -90,7 +90,7 @@ const SingleRecipe = () => {
 
       </div>
 
-      <div className="px-8 py-6 bg-blue-50  h-fit   rounded-2xl ">
+      <div className="px-8 py-6 bg-blue-50  h-fit w-5/6  rounded-2xl ">
         <h2 className="text-2xl mb-4 font-semibold text-blue-700">Ingredients</h2>
         <ul style={{ listStyleType: "square" }} className="whitespace-normal pl-8 font-semibold text-blue-800">
           {
