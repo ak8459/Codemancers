@@ -16,8 +16,7 @@ Receptor boasts a user-friendly interface that makes browsing through its extens
 
 
 ## Demo
-**Vercel :** [https://codemancers-jivf.vercel.app/](https://codemancers-g388.vercel.app/)
-
+**Vercel :** https://codemancers-g388.vercel.app/
 **Github :** https://github.com/ak8459/Codemancers
 
 
@@ -78,6 +77,7 @@ Start the server
 - Cant not make a post, edit, and delete requests for the given api because it has not mentioned routes.
 - The full data is not given in the API for single recipe to display.
 - Some times user don't see recipe image when user looks for single recipe as this is bug in api.
-- There is no section for a particular recipe. 
+- There is no section for a particular recipe.
+- used Roboto font family to take it close to picture.
 
 
