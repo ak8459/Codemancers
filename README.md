@@ -1,5 +1,7 @@
 
-# Receptor
+# Receptor   
+![Screenshot 2024-05-09 140412](https://github.com/ak8459/Codemancers/assets/87300147/ffe0f525-22fb-44a2-a891-b6e3b4e44fd4)
+
 
 Welcome to Receptor - your ultimate destination for delicious recipes and healthy diet plans! We are passionate about food and believe that eating healthy should never compromise on taste.
 
