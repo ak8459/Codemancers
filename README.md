@@ -4,7 +4,7 @@
 Welcome to Receptor - your ultimate destination for delicious recipes and healthy diet plans! We are passionate about food and believe that eating healthy should never compromise on taste.
 
 ## About
-Receptor boasts a user-friendly interface that makes browsing through its extensive collection of recipes a delightful experience. Whether you're a seasoned chef or a novice in the kitchen, you'll find something to tantalize your taste buds on Receptor. From quick and easy weeknight dinners to gourmet creations for special occasions, our curated selection caters to diverse palates and dietary preferences. With detailed ingredient lists.
+Receptor boasts a user-friendly interface that makes browsing through its extensive collection of recipes a delightful experience. Whether you're a seasoned chef or a novice in the kitchen, you'll find something to tantalize your taste buds on Receptor. From quick and easy weeknight dinners to gourmet creations for special occasions, our curated selection caters to diverse palates and dietary preferences, with detailed ingredient lists.
 
 
 
@@ -72,4 +72,12 @@ Start the server
 ```bash
   npm run dev
 ```
+
+## Notes 
+
+- Cant not make a post, edit, and delete requests for the given api because it has not mentioned routes.
+- The full data is not given in the API for single recipe to display.
+- Some times user don't see recipe image when user looks for single recipe as this is bug in api.
+- There is no section for a particular recipe. 
+
 
