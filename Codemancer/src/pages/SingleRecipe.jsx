@@ -23,7 +23,7 @@ const SingleRecipe = () => {
 
         <div>
           <div className="image item-center">
-            <img className="border w-full h-full rounded-3xl" src={recipeInfo?.images?.LARGE?.url} alt={recipeInfo?.label} />
+            <img className="border w-full h-full rounded-3xl" src={recipeInfo.image} alt={recipeInfo?.label} />
           </div>
 
           <div>
@@ -102,7 +102,7 @@ const SingleRecipe = () => {
         </div>
 
 
-        <div style={{ position: 'absolute', top: '36%' }} className="ingredients flex-grow px-10 py-4 bg-blue-50  h-fit  rounded-2xl ">
+        <div style={{ position: 'absolute', top: '32%' }} className="ingredients flex-grow px-10 py-4 bg-blue-50  h-fit  rounded-2xl ">
           <h2 className="text-2xl mb-4 font-semibold text-blue-700">Ingredients</h2>
           <ul className="list-disc whitespace-normal  font-semibold text-blue-800">
             {
