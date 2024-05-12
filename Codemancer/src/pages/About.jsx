@@ -2,7 +2,7 @@
 
 const About = () => {
     return (
-        <div className="container mx-auto py-8 px-2">
+        <div className="container mx-auto py-8 px-2 font-roboto">
             <h1 className="text-5xl font-bold text-center mb-4  text-blue-700">About Receptor</h1>
             <div >
                 <img src='https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
