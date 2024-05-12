@@ -1,4 +1,4 @@
-![Screenshot 2024-05-12 211616](https://github.com/ak8459/Codemancers/assets/87300147/f0c7f101-e936-4a8c-b85c-d8f1cf4f153c)![Screenshot 2024-05-12 211616](https://github.com/ak8459/Codemancers/assets/87300147/8cde0ad2-e123-451e-a46e-0d553e054fbd)
+
 # Receptor  
 ![Screenshot 2024-05-09 140412](https://github.com/ak8459/Codemancers/assets/87300147/ffe0f525-22fb-44a2-a891-b6e3b4e44fd4)
 
@@ -14,11 +14,12 @@ Receptor boasts a user-friendly interface that makes browsing through its extens
 
 **Client:** React, Html, CSS, TailwindCSS, React-context
 
-**API:**  https://developer.edamam.com/
+ **API:**  https://developer.edamam.com/
 
 
 ## Demo
 **Vercel :** https://codemancers-g388.vercel.app/
+
 **Github :** https://github.com/ak8459/Codemancers
 
 
