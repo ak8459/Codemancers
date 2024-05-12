@@ -10,7 +10,7 @@ const RecipeCard = ({ recipe }) => {
 
     return (
         <div className="max-w-sm rounded rounded-3xl bg-blue-50  overflow-hidden shadow-lg">
-            <Link to={`/recipe/${recipeId(uri)}`}>
+            <Link to={`/recipe/${recipeId(uri)}`} >
                 <img className="w-full h-80" src={image} alt="Sunset in the mountains" />
                 <div className="px-6 my-10">
                     <div className="font-bold text-xl mb-2 text-blue-600">{label}</div>

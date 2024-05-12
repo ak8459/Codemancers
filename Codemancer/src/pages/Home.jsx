@@ -5,29 +5,21 @@ import Recipes from "../components/Recipes";
 import Loading from "../components/Loading";
 import { RecipeContext } from "../context/RecipeContext";
 const Home = () => {
-    const [query, setQuery] = useState("");
-    const [dishType, setDishType] = useState(['bread']);
-    const [diet, setDiet] = useState(['kosher']);
+    // const [query, setQuery] = useState("");
+    const [dishType, setDishType] = useState('');
+    const [diet, setDiet] = useState('');
 
-    const { isLoading, fetchData, recipes } = useContext(RecipeContext)
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            fetchData(query, dishType, diet)
-        }, 500);
-        return () => clearTimeout(timer);
-    }, [query, dishType, diet]);
+    const { isLoading, recipes, query, setQuery } = useContext(RecipeContext)
 
 
 
-    if (isLoading) {
-        return <Loading />
-    }
+    // if (isLoading) {
+    //     return <Loading />
+    // }
 
     const handleChange = (e) => {
         setQuery(e.target.value)
     }
-
 
     return (
         <>
@@ -35,7 +27,8 @@ const Home = () => {
                 Value={query}
                 handleChange={handleChange}
             />
-            <Recipes recipes={recipes.hits} />
+            {isLoading ? <Loading /> : <Recipes recipes={recipes.hits} />}
+
 
 
         </>

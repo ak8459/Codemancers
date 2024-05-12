@@ -1,8 +1,12 @@
-import React from 'react'
-
+import React, { useContext } from 'react'
+import { RecipeContext } from '../context/RecipeContext'
 import { Category, Diet } from '../context/RecipeContext'
 
 const Filter = ({ toggleFilter }) => {
+    const { clearFilter, setDishType, setDiet } = useContext(RecipeContext)
+
+
+
 
     return (
         <div className='w-2/4 mx-auto bg-blue-50 px-10 py-7 mt-10 rounded rounded-xl'>
@@ -24,7 +28,7 @@ const Filter = ({ toggleFilter }) => {
                         Category.map((category) => {
                             return (
                                 <div key={category.id}>
-                                    <button type="button" className="py-3 px-4 inline-flex  items-center text-sm font-medium rounded-lg border border-gray-200 bg-blue-700 text-blue-700  hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
+                                    <button type="button" onClick={() => setDishType(category.value)} className="py-3 px-4 inline-flex  items-center text-sm font-medium rounded-lg border border-gray-200 bg-blue-700 text-blue-700  hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
                                         {category.name}
                                     </button>
                                 </div>
@@ -39,7 +43,7 @@ const Filter = ({ toggleFilter }) => {
                             Diet.map((category) => {
                                 return (
                                     <div key={category.id}>
-                                        <button type="button" className="py-3 px-4 inline-flex  items-center text-sm font-medium rounded-lg border border-gray-200 bg-blue-700 text-blue-700  hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
+                                        <button type="button" onClick={() => setDiet(category.value)} className="py-3 px-4 inline-flex  items-center text-sm font-medium rounded-lg border border-gray-200 bg-blue-700 text-blue-700  hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
                                             {category.name}
                                         </button>
                                     </div>
@@ -52,7 +56,7 @@ const Filter = ({ toggleFilter }) => {
 
             <div className='flex items-center justify-end mt-10'>
                 <div className="mr-2">
-                    <button type="button" className="py-2 px-5 inline-flex  items-center text-sm font-bold rounded-2xl border-2 border-blue-700 bg-blue-700 text-blue-700 hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
+                    <button type="button" onClick={clearFilter} className="py-2 px-5 inline-flex  items-center text-sm font-bold rounded-2xl border-2 border-blue-700 bg-blue-700 text-blue-700 hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
                         Clear Filter
                     </button>
                 </div>

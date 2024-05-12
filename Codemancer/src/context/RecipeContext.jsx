@@ -50,7 +50,7 @@ export const Diet = [
     {
         id: 3,
         name: "Keto",
-        value: "keto",
+        value: "keto-friendly",
         checked: false
     },
 
@@ -78,6 +78,7 @@ const RecipeContextValues = {
     getRecipeInfo: () => { },
     toggleFilter: () => { },
     fetchData: () => { },
+    clearFilter: () => { },
     queryList: [],
     searchQuery: "",
     dishType: "",
@@ -88,8 +89,8 @@ const RecipeContextValues = {
 
 }
 const BASE_URL = "https://api.edamam.com/api/recipes/v2"
-const API_KEY = import.meta.env.VITE_APP_KEY
-const API_ID = import.meta.env.VITE_APP_ID
+export const API_KEY = import.meta.env.VITE_APP_KEY
+export const API_ID = import.meta.env.VITE_APP_ID
 // export const RecipeContext = createContext(null)
 export const RecipeContext = createContext(RecipeContextValues)
 
@@ -105,7 +106,9 @@ export function RecipeProvider({ children }) {
     const [recipes, setRecipes] = useState({ hits: [], _links: {} });
     const [isLoading, setIsLoading] = useState(false)
     const [recipeInfo, setRecipeInfo] = useState(RecipeContextValues.recipeInfo);
-
+    const [dishType, setDishType] = useState('');
+    const [diet, setDiet] = useState('');
+    const [query, setQuery] = useState("");
 
     const getRecipeInfo = async (recipeId) => {
         try {
@@ -121,19 +124,36 @@ export function RecipeProvider({ children }) {
 
     }
 
+    function clearFilter() {
+        setDishType('');
+        setDiet('');
+    }
 
-    const fetchData = (query = "", dishType, diet) => {
+    const fetchData = (query, dishType, diet,) => {
         setIsLoading(true)
+        query = query || "chicken";
+        dishType = dishType || "starter";
+        diet = diet || "vegan";
         getRecipes(query, dishType, diet).then((data) => {
-            console.log(data);
             setRecipes({ hits: data.hits, _links: data._links });
             setIsLoading(false)
         })
     }
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            fetchData(query, dishType, diet)
+        }, 500);
+        return () => clearTimeout(timer);
+    }, [query, dishType, diet]);
+
+    console.log(dishType);
+
     return (
         <RecipeContext.Provider value={{
-            fetchData, isLoading, recipes, getRecipeInfo, recipeInfo
+            fetchData, isLoading, recipes, getRecipeInfo, recipeInfo,
+            setRecipeInfo, dishType, setDishType, diet, setDiet,
+            clearFilter, query, setQuery
         }}>
             {children}
         </RecipeContext.Provider>
