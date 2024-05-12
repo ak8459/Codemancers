@@ -18,13 +18,13 @@ const SingleRecipe = () => {
   }
   // console.log(recipeInfo);
   return (
-    <div className='w-3/5 grid grid-cols-2 gap-4 mt-16 mx-auto'>
+    <div className='w-3/5 grid grid-cols-2 gap-5 md:grid-cols-2 mt-16 mx-auto'>
 
-      <div ><img className="w-full border h-auto  rounded-3xl" src={recipeInfo.image} alt={recipeInfo?.label} /></div>
+      <div ><img className="w-full border h-auto sm:object-fit  rounded-3xl" src={recipeInfo.image} alt={recipeInfo?.label} /></div>
 
       <div className="mt-5">
-        <h2 className="text-3xl my-4 font-semibold  text-blue-700">{recipeInfo?.label}</h2>
-        <h2 className="text-md my-4 font-semibold  text-blue-600">{recipeInfo?.label}</h2>
+        <h2 className="text-3xl my-4 font-semibold sm:text-3xl  text-blue-700">{recipeInfo?.label}</h2>
+        <h2 className="text-md my-4 font-semibold  sm:text-lg text-blue-600">{recipeInfo?.label}</h2>
 
         <hr className="border-gray-200 my-3" />
         <div className="flex justify-evenly">
@@ -34,7 +34,7 @@ const SingleRecipe = () => {
         </div>
         <hr className="border-gray-200 my-3" />
         <div className="whitespace-normal">
-          <div >
+          <div className="mt-6">
             <span className="font-semibold text-gray-500">Diet:</span>
             <span className="ml-12 text-blue-700 font-semibold">{recipeInfo?.dietLabels?.[0]}</span>
           </div>
@@ -46,7 +46,7 @@ const SingleRecipe = () => {
 
       </div>
 
-      <div >
+      <div className="py-2 " >
         <h2 className="text-2xl my-4 font-semibold font-mono text-blue-700">About this Recipe</h2>
         <div className="text-start font-semibold text-lg text-blue-800 w-full mx-auto">
           <p className="mb-2">This easy peasy recipe is perfect for the evening cravings, you know! when
@@ -57,8 +57,8 @@ const SingleRecipe = () => {
         </div>
 
         <div className="flex-grow  ">
-          <h2 className="text-2xl mt-10 mb-4 font-semibold text-blue-700">Instructions</h2>
-          <div className="text-start p-4 text-blue-600 whitespace-normal">
+          <h2 className="text-2xl sm:text-2xl mt-10 mb-4 font-semibold text-blue-700">Instructions</h2>
+          <div className="text-start p-4 text-blue-500 whitespace-normal">
             {recipeInfo?.ingredientLines?.map((ingredient, index) => (
               <p className="mb-4 font-semibold text-lg text-blue-800 flex" key={index}>
                 <span>{index + 1}.</span>
@@ -72,9 +72,9 @@ const SingleRecipe = () => {
         <hr className="border-gray-100 my-10" />
 
         <div className="notes">
-          <h2 className="text-3xl mt-10 mb-4 font-semibold text-blue-700">Notes</h2>
+          <h2 className="text-2xl mt-10 mb-4 font-semibold text-blue-700">Notes</h2>
           <div className="text-start ml-4 text-blue-600 whitespace-normal">
-            <ul className="list-disc list-inside  font-semibold  text-blue-800">
+            <ul style={{ listStyleType: "square" }} className=" list-inside  font-semibold  text-blue-800">
               <li>Lorem ipsum dolor sit amet conseadipisci sapiente </li>
               <li>Lorem ipsum dolor sit amet conseadipisci sapiente</li>
             </ul>
@@ -90,13 +90,13 @@ const SingleRecipe = () => {
 
       </div>
 
-      <div className="px-10 py-4 bg-blue-50  h-fit  rounded-2xl ">
+      <div className="px-8 py-6 bg-blue-50  h-fit   rounded-2xl ">
         <h2 className="text-2xl mb-4 font-semibold text-blue-700">Ingredients</h2>
-        <ul className="list-disc whitespace-normal  font-semibold text-blue-800">
+        <ul style={{ listStyleType: "square" }} className="whitespace-normal pl-8 font-semibold text-blue-800">
           {
             recipeInfo?.ingredients?.map((ingredient, index) => {
               return (
-                <li className=" text-blue-700 mb-2 font-semibold" key={index}>
+                <li className=" text-blue-800 mb-2 font-semibold" key={index}>
                   {ingredient.text}
                 </li>
               );

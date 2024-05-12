@@ -9,9 +9,9 @@ const RecipeCard = ({ recipe }) => {
 
 
     return (
-        <div className="max-w-sm rounded rounded-3xl bg-blue-50  overflow-hidden shadow-lg">
+        <div className="rounded rounded-3xl bg-blue-50  overflow-hidden ">
             <Link to={`/recipe/${recipeId(uri)}`} >
-                <img className="w-full h-80" src={image} alt="Sunset in the mountains" />
+                <img className="w-full h-80 sm:object-cover md:object-cover "  src={image} alt="Sunset in the mountains" />
                 <div className="px-6 my-10">
                     <div className="font-bold text-xl mb-2 text-blue-600">{label}</div>
                     <p className="text-gray-600 text-base">

@@ -13,10 +13,6 @@ const Home = () => {
 
 
 
-    // if (isLoading) {
-    //     return <Loading />
-    // }
-
     const handleChange = (e) => {
         setQuery(e.target.value)
     }
@@ -27,10 +23,8 @@ const Home = () => {
                 Value={query}
                 handleChange={handleChange}
             />
-            {isLoading ?null: <Recipes recipes={recipes.hits} />}
-
-
-
+            
+            <Recipes recipes={recipes.hits} />
         </>
     )
 }
