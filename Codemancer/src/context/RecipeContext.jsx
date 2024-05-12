@@ -89,8 +89,8 @@ const RecipeContextValues = {
 
 }
 const BASE_URL = "https://api.edamam.com/api/recipes/v2"
-export const API_KEY = import.meta.env.VITE_APP_KEY
-export const API_ID = import.meta.env.VITE_APP_ID
+const API_KEY = import.meta.env.VITE_APP_KEY
+const API_ID = import.meta.env.VITE_APP_ID
 // export const RecipeContext = createContext(null)
 export const RecipeContext = createContext(RecipeContextValues)
 
@@ -116,11 +116,26 @@ export function RecipeProvider({ children }) {
         }
     }
 
+
+
+    //     * Clears all filter options to their default state.
+    //      * @function clearFilter
+    //      * @memberof RecipeProvider 
+
     function clearFilter() {
+        // Set all filter options to their default state.
+        // This is useful when you want to start a new search with no filters.
         setDishType('');
         setDiet('');
     }
 
+
+    //       * @function fetchData
+    //     * @description Fetches data from the Edamam API based on the query, dishType and diet.
+    //      * @param { string } query - The query to search for.Defaults to "chicken".
+    //     * @param { string } dishType - The type of dish to search for.Defaults to "starter".
+    //    * @param { string } diet - The diet of the dish to search for.Defaults to "vegan".
+    //     * @memberof RecipeProvider
     const fetchData = (query, dishType, diet,) => {
         setIsLoading(true)
         query = query || "chicken";
@@ -132,6 +147,7 @@ export function RecipeProvider({ children }) {
         })
     }
 
+
     useEffect(() => {
         const timer = setTimeout(() => {
             fetchData(query, dishType, diet)
@@ -139,7 +155,7 @@ export function RecipeProvider({ children }) {
         return () => clearTimeout(timer);
     }, [query, dishType, diet]);
 
- 
+
 
     return (
         <RecipeContext.Provider value={{

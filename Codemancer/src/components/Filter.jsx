@@ -2,11 +2,32 @@ import React, { useContext } from 'react'
 import { RecipeContext } from '../context/RecipeContext'
 import { Category, Diet } from '../context/RecipeContext'
 
+/*
++ * Component that renders a filter for categories and diets.
++ */
 const Filter = ({ toggleFilter }) => {
+    /**
++     * Context hook to access the state and functions of the RecipeContext.
++     * @typedef {Object} RecipeContextValues
++     * @property {function} clearFilter - Clears all filter options.
++     * @property {function} setDishType - Sets the selected dish type.
++     * @property {function} setDiet - Sets the selected diet.
++     * @property {Object} queryList - The list of recipes that match the current filters.
++     * @property {string} searchQuery - The current search query.
++     * @property {string} dishType - The currently selected dish type.
++     * @property {string} diet - The currently selected diet.
++     * @property {boolean} isLoading - Whether the data is currently loading.
++     * @property {Object} recipeInfo - The information about the currently selected recipe.
++     * @property {Object} recipes - The list of recipes.
++     */
     const { clearFilter, setDishType, setDiet } = useContext(RecipeContext)
 
 
 
+    /**
++     * Function to render the filter component.
++     * @returns {JSX.Element} - The JSX element for the filter component.
++     */
 
     return (
         <div className='w-2/4 font-roboto mx-auto bg-blue-50 px-10 py-7 mt-10 rounded rounded-xl'>
@@ -25,6 +46,10 @@ const Filter = ({ toggleFilter }) => {
                 <p className='text-xl text-blue-700 font-bold'>Category</p>
                 <div className='flex flex-wrap gap-2  '>
                     {
+                        /**
++                         * Array of categories that can be selected.
++                         * @type {Array<Object>} - Each object contains the category name and id.
++                         */
                         Category.map((category) => {
                             return (
                                 <div key={category.id}>
@@ -69,5 +94,6 @@ const Filter = ({ toggleFilter }) => {
         </div>
     )
 }
+
 
 export default Filter

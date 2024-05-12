@@ -1,4 +1,20 @@
 
+/**
+ * A Loading component to display while data is being fetched.
+ * The component will display a spinning loading icon and the text "Loading...".
+ *
+ * The component is an SVG element with 5 paths that are animated to create
+ * a spinning effect. The paths represent the loading icon.
+ *
+ * The component also contains a span element with the text "Loading...". The
+ * text is displayed in a large font size and colored blue.
+ *
+ * The component is rendered as an absolute element in the center of the screen.
+ *
+ * @function Loading
+ * @description A component to display while data is being fetched.
+ * @returns A JSX element representing a loading icon and the text "Loading...".
+ */
 const Loading = () => {
     return (
         <div aria-label="Loading..." role="status" className="flex items-center space-x-2 justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
