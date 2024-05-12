@@ -14,11 +14,12 @@ Receptor boasts a user-friendly interface that makes browsing through its extens
 
 **Client:** React, Html, CSS, TailwindCSS, React-context
 
-**API:**  https://developer.edamam.com/
+ **API:**  https://developer.edamam.com/
 
 
 ## Demo
 **Vercel :** https://codemancers-g388.vercel.app/
+
 **Github :** https://github.com/ak8459/Codemancers
 
 
@@ -29,16 +30,11 @@ Receptor boasts a user-friendly interface that makes browsing through its extens
 - Each recipe on Receptor is showcased on its own dedicated page, providing in-depth details, cooking instructions, and serving suggestions to ensure a seamless cooking experience.
 - Learn more about Receptor's mission, team, and dedication to culinary excellence on our informative About page. Discover the story behind our platform and the passion that drives us to serve delicious recipes to our users.
 ## Screenshots
-
-![Screenshot 2024-05-12 162705](https://github.com/ak8459/Codemancers/assets/87300147/f6ac4330-38a3-43c7-9131-92697ac2aea2)
-
-![Screenshot 2024-05-12 162758](https://github.com/ak8459/Codemancers/assets/87300147/875fb01c-b4b0-41d3-8418-fcc9a2ede6d7)
-
-![Screenshot 2024-05-12 162830](https://github.com/ak8459/Codemancers/assets/87300147/74d8a1c8-31b3-49d3-be11-f781ed90fdea)
-
-![Screenshot 2024-05-12 162734](https://github.com/ak8459/Codemancers/assets/87300147/92aca01b-db63-4c16-a068-e518ea2d1b41)
-
-![Screenshot 2024-05-12 162845](https://github.com/ak8459/Codemancers/assets/87300147/5da4cd1b-f7e6-49d9-90d7-4fdf0777afd0)
+![Screenshot 2024-05-12 211451](https://github.com/ak8459/Codemancers/assets/87300147/9cd96a8a-7d12-4ddc-a342-9bf5e03a8a67)
+![Screenshot 2024-05-12 211511](https://github.com/ak8459/Codemancers/assets/87300147/83f1eb7e-3284-467f-932e-ea65ca82ba95)
+![Screenshot 2024-05-12 211616](https://github.com/ak8459/Codemancers/assets/87300147/d4552eeb-3aa2-42df-8d1a-b4c437c19a40)
+![Screenshot 2024-05-12 211658](https://github.com/ak8459/Codemancers/assets/87300147/ec802e27-0fbc-454a-9439-dd2093749272)
+![Screenshot 2024-05-12 211558](https://github.com/ak8459/Codemancers/assets/87300147/b3468040-e146-4ea6-82dc-bf7fa32a54fe)
 
 ## Environment Variables
 To run this project, you will need to add the following environment variables to your .env file
