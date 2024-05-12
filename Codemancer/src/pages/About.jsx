@@ -8,7 +8,7 @@ const About = () => {
                 <img src='https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                     alt="About Receptor" className="  rounded-xl    w-full h-96 mb-6 object-cover" />
             </div>
-            <div className="text-start font-semibold text-lg text-gray-800 w-full mx-auto">
+            <div className="text-start font-semibold text-lg text-blue-500 w-full mx-auto">
                 <p className="mb-2">Welcome to Receptor - your ultimate destination for delicious recipes and healthy diet plans!
                     We are passionate about food and believe that eating healthy should never compromise on taste.</p>
                 <p className="mb-2">At Receptor, we curate a wide range of recipes to suit every taste bud and dietary requirement.
