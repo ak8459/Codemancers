@@ -1,4 +1,4 @@
-![Screenshot 2024-05-12 211616](https://github.com/ak8459/Codemancers/assets/87300147/8cde0ad2-e123-451e-a46e-0d553e054fbd)
+![Screenshot 2024-05-12 211616](https://github.com/ak8459/Codemancers/assets/87300147/f0c7f101-e936-4a8c-b85c-d8f1cf4f153c)![Screenshot 2024-05-12 211616](https://github.com/ak8459/Codemancers/assets/87300147/8cde0ad2-e123-451e-a46e-0d553e054fbd)
 # Receptor  
 ![Screenshot 2024-05-09 140412](https://github.com/ak8459/Codemancers/assets/87300147/ffe0f525-22fb-44a2-a891-b6e3b4e44fd4)
 
@@ -30,12 +30,10 @@ Receptor boasts a user-friendly interface that makes browsing through its extens
 - Learn more about Receptor's mission, team, and dedication to culinary excellence on our informative About page. Discover the story behind our platform and the passion that drives us to serve delicious recipes to our users.
 ## Screenshots
 ![Screenshot 2024-05-12 211451](https://github.com/ak8459/Codemancers/assets/87300147/9cd96a8a-7d12-4ddc-a342-9bf5e03a8a67)
-
 ![Screenshot 2024-05-12 211511](https://github.com/ak8459/Codemancers/assets/87300147/83f1eb7e-3284-467f-932e-ea65ca82ba95)
-
-![Screenshot 2024-05-12 211558](https://github.com/ak8459/Codema![Screenshot 2024-05-12 211616](https://github.com/ak8459/Codemancers/assets/87300147/816db9f8-7c93-4c5a-9d51-c537d0c42c04)
-
+![Screenshot 2024-05-12 211616](https://github.com/ak8459/Codemancers/assets/87300147/d4552eeb-3aa2-42df-8d1a-b4c437c19a40)
 ![Screenshot 2024-05-12 211658](https://github.com/ak8459/Codemancers/assets/87300147/ec802e27-0fbc-454a-9439-dd2093749272)
+![Screenshot 2024-05-12 211558](https://github.com/ak8459/Codemancers/assets/87300147/b3468040-e146-4ea6-82dc-bf7fa32a54fe)
 
 ## Environment Variables
 To run this project, you will need to add the following environment variables to your .env file
