@@ -15,12 +15,12 @@ export const Category = [{
 }, {
     id: 3,
     name: "Dessert",
-    value: "dessert",
+    value: "desserts",
     checked: false
 }, {
     id: 4,
     name: "Drink",
-    value: "drink",
+    value: "drinks",
     checked: false
 }
     , {
@@ -31,7 +31,7 @@ export const Category = [{
 }, {
     id: 6,
     name: "Snack",
-    value: "snack",
+    value: "biscuits and cookies",
     checked: false
 }, {
     id: 7,
@@ -41,7 +41,7 @@ export const Category = [{
 }, {
     id: 8,
     name: "Pastry",
-    value: "pastry",
+    value: "pancake",
     checked: false
 }
 ]
@@ -96,13 +96,6 @@ export const RecipeContext = createContext(RecipeContextValues)
 
 
 export function RecipeProvider({ children }) {
-    // const [searchQuery, setSearchQuery] = useState("");
-    // const [dishType, setDishType] = useState('');
-    // const [diets, setDiets] = useState('');
-    // const [recipes, setRecipes] = useState(RecipeContextValues.recipes)
-    // const [isLoading, setIsLoading] = useState(false);
-    // // const [queryList, setQueryList] = useState([])
-
     const [recipes, setRecipes] = useState({ hits: [], _links: {} });
     const [isLoading, setIsLoading] = useState(false)
     const [recipeInfo, setRecipeInfo] = useState(RecipeContextValues.recipeInfo);
@@ -121,7 +114,6 @@ export function RecipeProvider({ children }) {
         } finally {
             setIsLoading(false);
         }
-
     }
 
     function clearFilter() {

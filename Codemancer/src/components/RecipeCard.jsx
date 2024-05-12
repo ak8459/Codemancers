@@ -6,7 +6,7 @@ function recipeId(uri) {
 const RecipeCard = ({ recipe }) => {
 
     const { image, label, uri } = recipe?.recipe
-    // console.log(uri);
+
 
     return (
         <div className="max-w-sm rounded rounded-3xl bg-blue-50  overflow-hidden shadow-lg">

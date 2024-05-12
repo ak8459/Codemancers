@@ -27,7 +27,7 @@ const Home = () => {
                 Value={query}
                 handleChange={handleChange}
             />
-            {isLoading ? <Loading /> : <Recipes recipes={recipes.hits} />}
+            {isLoading ?null: <Recipes recipes={recipes.hits} />}
 
 
 
