@@ -78,5 +78,6 @@ Start the server
 - Cant not make a post, edit, and delete requests for the given api because it has not mentioned routes.
 - The full data is not given in the API for single recipe to display.
 - Some times user don't see recipe image when user looks for single recipe as this is bug in api.
+- There is no section for a particular recipe. 
 
 
