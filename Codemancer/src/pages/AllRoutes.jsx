@@ -8,7 +8,7 @@ const AllRoutes = () => {
         <>
             <Routes>
                 <Route path="/" exact element={<Home />} />
-                <Route path="/about" exact element={<About />} />
+                <Route path="/about"  element={<About />} />
                 <Route path='/recipe/:recipeId' element={<SingleRecipe />} />
             </Routes>
         </>
