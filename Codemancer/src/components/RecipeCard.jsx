@@ -9,7 +9,7 @@ const RecipeCard = ({ recipe }) => {
 
 
     return (
-        <div className="rounded rounded-3xl bg-blue-50  overflow-hidden ">
+        <div className="rounded font-roboto rounded-3xl bg-blue-50  overflow-hidden ">
             <Link to={`/recipe/${recipeId(uri)}`} >
                 <img className="w-full h-80 sm:object-cover md:object-cover "  src={image} alt="Sunset in the mountains" />
                 <div className="px-6 my-10">

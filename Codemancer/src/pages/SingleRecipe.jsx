@@ -16,9 +16,9 @@ const SingleRecipe = () => {
   if (isLoading) {
     return <Loading />
   }
-  // console.log(recipeInfo);
+
   return (
-    <div className='w-3/5 grid grid-cols-2 gap-5 md:grid-cols-2 mt-16 mx-auto '>
+    <div className='w-3/5 font-roboto  grid grid-cols-2 gap-5 md:grid-cols-2 mt-16 mx-auto '>
 
       <div ><img className="w-full border h-auto sm:object-fit  rounded-3xl" src={recipeInfo.image} alt={recipeInfo?.label} /></div>
 
@@ -27,7 +27,7 @@ const SingleRecipe = () => {
         <h2 className="text-md my-4 font-semibold  sm:text-lg text-blue-600">{recipeInfo?.label}</h2>
 
         <hr className="border-gray-200 my-3" />
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly ">
           <p className="text-blue-600 font-semibold">4 Portions</p>
           <p className="text-blue-600 h-2">|</p>
           <p className="text-blue-600 font-semibold">{recipeInfo?.totalTime} min</p>

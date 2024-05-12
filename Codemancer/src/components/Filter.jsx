@@ -9,7 +9,7 @@ const Filter = ({ toggleFilter }) => {
 
 
     return (
-        <div className='w-2/4 mx-auto bg-blue-50 px-10 py-7 mt-10 rounded rounded-xl'>
+        <div className='w-2/4 font-roboto mx-auto bg-blue-50 px-10 py-7 mt-10 rounded rounded-xl'>
             <div className='flex items-center justify-between'>
                 <button type="button" onClick={toggleFilter} className="text-blue-800 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  dark:hover:bg-blue-100 " data-modal-hide="default-modal">
                     <svg className="w-3 h-3 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
