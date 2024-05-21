@@ -22,7 +22,7 @@ function SearchBox({ placeholderVal, Value, handleChange }) {
           text-gray-900 text-md pl-16
           placeholder:font-semibold
           focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500
-          focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 
+          focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 
           dark:bg-blue-50 dark:placeholder-gray-400 dark:placeholder-font-bold"
             placeholder={placeholderVal} />
         </div>
