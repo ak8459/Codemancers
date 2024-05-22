@@ -18,7 +18,7 @@ Receptor boasts a user-friendly interface that makes browsing through its extens
 
 
 ## Demo
-**Vercel :** https://codemancers-g388.vercel.app/
+**Vercel :** https://codemancers-ltjx.vercel.app/
 
 **Github :** https://github.com/ak8459/Codemancers
 
