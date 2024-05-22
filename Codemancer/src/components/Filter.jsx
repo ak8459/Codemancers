@@ -42,6 +42,7 @@ const Filter = ({ toggleFilter }) => {
             <div className='text-xl font-bold text-gray-400 text-center mb-5'>
                 Filter Selection
             </div>
+            {/* bg - blue - 700 */}
             <div className='categories diet flex flex-col gap-5'>
                 <p className='text-xl text-blue-700 font-bold'>Category</p>
                 <div className='flex flex-wrap gap-2  '>
@@ -50,10 +51,11 @@ const Filter = ({ toggleFilter }) => {
 +                         * Array of categories that can be selected.
 +                         * @type {Array<Object>} - Each object contains the category name and id.
 +                         */
+                        
                         Category.map((category) => {
                             return (
                                 <div key={category.id}>
-                                    <button type="button" onClick={() => setDishType(category.value)} className="py-3 px-4 inline-flex  items-center text-sm font-medium rounded-lg border border-gray-200 bg-blue-700 text-blue-700  hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
+                                    <button type="button" onClick={() => setDishType(category.value)} className="py-3 px-4 inline-flex  items-center text-sm font-medium rounded-lg border border-gray-200  text-blue-700  hover:bg-blue-200 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
                                         {category.name}
                                     </button>
                                 </div>
@@ -68,7 +70,7 @@ const Filter = ({ toggleFilter }) => {
                             Diet.map((category) => {
                                 return (
                                     <div key={category.id}>
-                                        <button type="button" onClick={() => setDiet(category.value)} className="py-3 px-4 inline-flex  items-center text-sm font-medium rounded-lg border border-gray-200 bg-blue-700 text-blue-700  hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
+                                        <button type="button" onClick={() => setDiet(category.value)} className="py-3 px-4 inline-flex  items-center text-sm font-medium rounded-lg border border-gray-200  text-blue-700  hover:bg-blue-200 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
                                             {category.name}
                                         </button>
                                     </div>
@@ -81,12 +83,12 @@ const Filter = ({ toggleFilter }) => {
 
             <div className='flex items-center justify-end mt-10'>
                 <div className="mr-2">
-                    <button type="button" onClick={clearFilter} className="py-2 px-5 inline-flex  items-center text-sm font-bold rounded-2xl border-2 border-blue-700 bg-blue-700 text-blue-700 hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
+                    <button type="button" onClick={clearFilter} className="py-2 px-5 inline-flex  items-center text-sm font-bold rounded-2xl border-2 border-blue-700 text-blue-700 hover:bg-blue-200 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
                         Clear Filter
                     </button>
                 </div>
                 <div>
-                    <button onClick={toggleFilter} type="button" className="py-2 px-6 inline-flex items-center text-sm font-bold rounded-2xl border-2 border-blue-700 bg-blue-700 text-blue-700 hover:bg-blue-50 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
+                    <button onClick={toggleFilter} type="button" className="py-2 px-6 inline-flex items-center text-sm font-bold rounded-2xl border-2 border-blue-700  text-blue-700 hover:bg-blue-200 disabled:opacity-50 dark:bg-blue-50 dark:text-blue-700 dark:hover:bg-blue-100">
                         Close
                     </button>
                 </div>

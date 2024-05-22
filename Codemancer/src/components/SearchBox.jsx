@@ -27,7 +27,7 @@ function SearchBox({ placeholderVal, Value, handleChange }) {
             placeholder={placeholderVal} />
         </div>
         <div>
-          <button onClick={() => setShowFilter(!showFilter)} className="rounded-2xl items-center p-2.5 ms-5 w-32 text-base  font-bold text-blue-700    hover:bg-blue-800  focus:outline-none  dark:bg-blue-100 dark:hover:bg-blue-100 dark:focus:ring-blue-800 ">
+          <button onClick={() => setShowFilter(!showFilter)} className="rounded-2xl items-center p-2.5 ms-5 w-32 text-base  font-bold text-blue-700    hover:bg-blue-200  focus:outline-none  dark:bg-blue-100 dark:hover:bg-blue-100 dark:focus:ring-blue-800 ">
             {showFilter ? "Hide Filter" : "Show Filter"}
           </button>
         </div>
